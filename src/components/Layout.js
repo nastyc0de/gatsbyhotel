@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
-import ImageHotel from './ImageHotel';
 
 const Layout = (props) => {
     return (
@@ -44,7 +43,6 @@ const Layout = (props) => {
                 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fredoka+One&display=swap" rel="stylesheet"/> 
             </Helmet>
             <Header/>
-            <ImageHotel/>
             {props.children}
         </>
     )
