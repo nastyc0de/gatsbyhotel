@@ -40,7 +40,6 @@ const ContenidoInicio = () => {
         }
         `
     );
-    console.log(info.allDatoCmsPagina.nodes[0]);
     const {titulo, contenido, imagen} = info.allDatoCmsPagina.nodes[0];
     return (
         <>

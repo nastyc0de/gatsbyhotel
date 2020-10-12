@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
+import Footer from './Footer';
 
 const Layout = (props) => {
     return (
@@ -11,6 +12,10 @@ const Layout = (props) => {
                     css`
                         html{
                             font-size:62.5%;
+                            box-sizing:border-box;
+                        }
+                        *, *:before, *:after{
+                            box-sizing:inherit;
                         }
                         body{
                             font-size:16px;
@@ -44,6 +49,7 @@ const Layout = (props) => {
             </Helmet>
             <Header/>
             {props.children}
+            <Footer/>
         </>
     )
 }

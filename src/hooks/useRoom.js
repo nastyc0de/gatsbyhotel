@@ -24,9 +24,9 @@ const useRoom = () => {
     );
     
     return data.allDatoCmsHabitacion.nodes.map(habitacion =>({
-        titulo: habitacion.titulo,
+        nombre: habitacion.nombre,
         id:habitacion.id,
-        contenido:habitacion.contenido,
+        descripcion:habitacion.descripcion,
         imagen:habitacion.imagen,
         slug: habitacion.slug
     }))

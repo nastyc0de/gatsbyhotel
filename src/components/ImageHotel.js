@@ -45,7 +45,6 @@ const ImageHotel = () => {
             }
         `
     )
-    console.log(image)
     return (
         <ImageBG tag='section' fluid={image.sharp.fluid} fadeIn="soft">
             <Text>
